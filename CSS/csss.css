@@ -1,0 +1,120 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #33383a;
+}
+
+.menu li {
+    float: left;
+    padding-top: 2%;
+    padding-left: 8%;
+}
+
+.menu li a {
+    font-size: 20px;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background: #1289ea;
+}
+
+#hr {
+    margin-top: 0;
+    border-top: 5px solid #1289ea;
+    border-bottom: 5px solid #1289ea;
+}
+
+#pricing{
+	width: 989px;
+	margin: 100px auto;
+}
+
+.price_card{
+	width: 300px;
+	background: #33383a;
+	display: inline-table;
+	top: 0;
+}
+.price_card:not(:last-child){
+	margin-right: 40px;
+}
+.header{
+	color: rgb(255, 255, 255);
+}
+.alpha .header{
+	background: rgb(245, 166, 35);
+}
+.bravo .header{
+	background: rgb(246, 77, 77);
+}
+.charlie .header{
+	background: rgb(48, 219, 181);
+}
+.price{
+	width: 100%;
+	font-size: 60px;
+	font-weight: 300;
+	display: block;
+	text-align: center;
+	padding: 30px 0 10px;
+}
+.name{
+	width: 100%;
+	font-size: 15px;
+	font-weight: 700;
+	display: block;
+	text-align: center;
+	padding: 0 0 30px;
+}
+.features{
+	list-style: none;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+.features li{
+	margin: 0 35px;
+	padding: 20px 15px;
+	width: 200px;
+}
+.features li:not(:last-child){
+	border: 1px solid rgb(242, 242, 242);
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+button{
+	color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+	height: 40px;
+	width: 200px;
+	display: block;
+	font-weight: 700;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin: 20px auto 35px;
+}
+.alpha button{
+	background: rgb(245, 166, 35);
+}
+.bravo button{
+	background: rgb(246, 77, 77);
+}
+.charlie button{
+	background: rgb(48, 219, 181);
+}

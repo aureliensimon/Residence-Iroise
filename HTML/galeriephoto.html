@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Galerie-Photo</title>
+    <link href="../CSS/CSS.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  /* The grid: Four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 75px;
+    cursor: pointer;
+  }
+  </style>
+</head>
+    
+<body>
+    <div class="menu">
+        <ul>
+            <a href="index.html"><img src="../IMG/logo.png" height="150px;" style="float: left; margin-top: -0.75%;"></a>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="reservations.html">Réservations</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="galeriephoto.html">Galerie Photos</a></li>
+            <li><a href="nouscontacternew.html">Nous contacter</a></li>
+        </ul>
+    </div>
+    <hr id="hr">
+    <div style="text-align:center">
+  <!-- The four columns -->
+  <div class="row">
+    <div class="column">
+      <img src="../IMG/paysage.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="../IMG/interieur-chambre.JPG" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="../IMG/exterieur-facade.JPG" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="../IMG/interieur.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="../IMG/exterieur-porte.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="../IMG/exterieur-facade2.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="../IMG/interieur-lit.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="../IMG/interieur-chambre.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="../IMG/paysage.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="../IMG/interieur-chambre.JPG" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="../IMG/exterieur-facade.JPG" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="../IMG/interieur.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="../IMG/exterieur-porte.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="../IMG/exterieur-facade2.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="../IMG/interieur-lit.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="../IMG/interieur-chambre.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+  
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+  
+  <script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
+</body>
+</html>

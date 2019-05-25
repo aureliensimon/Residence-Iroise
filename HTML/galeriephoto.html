@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Galerie-Photo</title>
+    <title>Galerie Photo</title>
     <link href="../CSS/CSS.css" rel="stylesheet" type="text/css"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
@@ -83,58 +83,58 @@
   <!-- The four columns -->
   <div class="row">
     <div class="column">
-      <img src="../IMG/paysage.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/paysage.png" alt="Paysage" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-      <img src="../IMG/interieur-chambre.JPG" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/interieur-chambre.JPG" alt="Chambre" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-      <img src="../IMG/exterieur-facade.JPG" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/exterieur-facade.JPG" alt="Facade" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-      <img src="../IMG/interieur.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/interieur.png" alt="Intérieur" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-      <img src="../IMG/exterieur-porte.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/exterieur-porte.JPG" alt="Extérieur" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-      <img src="../IMG/exterieur-facade2.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/exterieur-facade2.JPG" alt="Extérieur" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-      <img src="../IMG/interieur-lit.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/interieur-lit.JPG" alt="Intérieur" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-      <img src="../IMG/interieur-chambre.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/interieur-chambre.JPG" alt="Chambre" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-      <img src="../IMG/paysage.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/paysage.png" alt="Paysage" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-      <img src="../IMG/interieur-chambre.JPG" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/interieur-chambre.JPG" alt="Chambre" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-      <img src="../IMG/exterieur-facade.JPG" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/exterieur-facade.JPG" alt="Facade" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-      <img src="../IMG/interieur.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/interieur.png" alt="Intérieur" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-      <img src="../IMG/exterieur-porte.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/exterieur-porte.JPG" alt="Extérieur" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-      <img src="../IMG/exterieur-facade2.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/exterieur-facade2.JPG" alt="Extérieur" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-      <img src="../IMG/interieur-lit.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/interieur-lit.JPG" alt="Intérieur" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-      <img src="../IMG/interieur-chambre.JPG" alt="Lights" style="width:100%" onclick="myFunction(this);">
+      <img src="../IMG/interieur-chambre.JPG" alt="Chambre" style="width:100%" onclick="myFunction(this);">
     </div>
   </div>
   
-  <div class="container">
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-    <img id="expandedImg" style="width:100%">
+  <div class="container" style="background-color: #222;">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn" style="margin-top: 2.5%; margin-right: 5%;">&times;</span>
+    <img id="expandedImg" style="width:60%; margin-top: 4%; margin-bottom: 1%;">
     <div id="imgtext"></div>
   </div>
   
@@ -145,6 +145,7 @@
     expandImg.src = imgs.src;
     imgText.innerHTML = imgs.alt;
     expandImg.parentElement.style.display = "block";
+    window.scroll(0,10000);
   }
   </script>
 </body>

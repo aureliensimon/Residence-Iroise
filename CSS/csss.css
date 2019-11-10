@@ -4,6 +4,31 @@ html, body {
     font-family: 'Rubik', sans-serif;
 }
 
+.navbar-custom {
+    background-color: #33383a;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    text-transform: uppercase;
+    font-family: Nunito;
+    font-weight: 900;
+}
+.navbar-custom .navbar-nav .nav-link {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    color: white !important;
+    font-family: Nunito;
+    font-weight: 500;
+    font-size: 1.15em;
+    text-transform: uppercase;
+}
+.navbar-custom .navbar-nav .nav-link:hover {
+    color : #1289ea!important;
+}
+.navbar-brand img {
+    width: 100px;
+}
+
 .menu ul {
     list-style-type: none;
     margin: 0;
@@ -97,7 +122,7 @@ html, body {
 	border-left: 0;
 	border-right: 0;
 }
-button{
+.buttonTarif {
 	color: rgb(255, 255, 255);
 	border: 0;
 	border-radius: 5px;
